@@ -30,7 +30,7 @@ sudo add-apt-repository universe
 拷貝附件ros2-apt-source_1.1.0.noble_all.deb到ubuntu的目錄中
 
 ```sh
-sudo chomd 777 ros2-apt-source_1.1.0.noble_all.deb    # 修改檔案權限
+sudo chmod 777 ros2-apt-source_1.1.0.noble_all.deb    # 修改檔案權限
 sudo dpkg -i ros2-apt-source_1.1.0.noble_all.deb      # 安裝檔案
 sudo apt update                                       # 更新apt
 ```

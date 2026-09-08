@@ -22,7 +22,7 @@ export LANG=en_US.UTF-8
 
 ```sh
 sudo apt install software-properties-common
-sudo add -apt-repository universe
+sudo add-apt-repository universe
 ```
 
 安裝apt source

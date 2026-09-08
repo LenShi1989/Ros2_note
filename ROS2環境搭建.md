@@ -34,3 +34,27 @@ sudo chmod 777 ros2-apt-source_1.1.0.noble_all.deb    # 修改檔案權限
 sudo dpkg -i ros2-apt-source_1.1.0.noble_all.deb      # 安裝檔案
 sudo apt update                                       # 更新apt
 ```
+
+# ROS必備環境
+
+軟體工具包安裝
+
+```sh
+sudo apt update
+sudo apt upgrade
+sudo apt install tar bzip2 wget -y
+sudo apt install ros-dev-tools -y
+```
+
+ROS核心庫
+
+```sh
+sudo apt install ros-jazzy-desktop -y
+```
+
+環境變量配置
+
+```sh
+echo 'source /opt/ros/jazzy/setup.bash' >> ~/.bashrc
+source ~/.bashrc
+```

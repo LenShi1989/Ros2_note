@@ -22,7 +22,7 @@ export LANG=en_US.UTF-8
 
 ```sh
 sudo apt install software-properties-common
-sudo add-apt-repository universe
+sudo add-apt-repository universe -y
 ```
 
 安裝apt source
@@ -57,4 +57,48 @@ sudo apt install ros-jazzy-desktop -y
 ```sh
 echo 'source /opt/ros/jazzy/setup.bash' >> ~/.bashrc
 source ~/.bashrc
+```
+
+檢驗ROS2安裝效果
+若出現小烏龜視窗則為安裝成功
+
+```sh
+ros2 run turtlesim turtlesim_node
+```
+
+# 建立專案
+
+`按兩次Tab鍵可以做指令查詢及補齊`
+
+## 安裝查看資料結構tree
+
+```sh
+sudo apt install tree
+```
+
+## step1 先用mkdir命令把src建好
+
+```sh
+mkdir dev_ws/src
+```
+
+## step2 運行 colcon build 初始化整個園區
+
+```sh
+colcon build
+```
+
+## step3 創建包
+
+```sh
+cd src
+ros2 pkg create --build-type ament_python --node-name my_node my_package
+```
+
+## step4 編譯執行packge
+
+```sh
+colcon build
+source install/setup.bash
+ros2 run my_package my_node
 ```

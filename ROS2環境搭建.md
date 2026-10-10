@@ -79,7 +79,7 @@ sudo apt install tree
 ## step1 先用mkdir命令把src建好
 
 ```sh
-mkdir dev_ws/src
+mkdir -p dev_ws/src
 ```
 
 ## step2 運行 colcon build 初始化整個園區

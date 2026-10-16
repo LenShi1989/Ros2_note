@@ -23,3 +23,7 @@ ROS2 實作一個小烏龜控制節點取名叫做turtle_gui_ctrl_node，參考t
 - 當前角速度
 - 當前角度
 ```
+
+```txt
+src，創建一個包，包名叫做arm_pkg，要求採用python語言進行開發，並且同時創建一個節點arm_joint_node
+```
